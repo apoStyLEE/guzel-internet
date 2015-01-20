@@ -1,0 +1,17 @@
+{
+  "version": "1.0.0",
+  "packages": [
+    {
+    	"name": "milliyet.com.tr",
+    	"domains":["*.milliyet.com.tr"]
+    },
+    {
+      "name": "eksisozluk.com",
+      "domains":["eksisozluk.com"]
+    },
+    {
+      "name": "twitter.com",
+      "domains":["twitter.com"]
+    }
+  ]
+}

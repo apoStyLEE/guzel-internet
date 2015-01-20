@@ -1,0 +1,23 @@
+{
+   "description": "Güzel internet için güzel web sayfaları",
+   "name": "Güzel internet",
+   "short_name": "güzelinternet",
+   "browser_action": {
+      "default_icon": "images/icon.png",
+      "default_popup": "popup.html"
+   },
+   "content_scripts": [ 
+      {
+         "js": [ "libs/jquery.min.js", "libs/runner.js"],
+         "matches": [ "http://*/*", "https://*/*"]
+      }
+   ],
+   "content_security_policy": "script-src 'self' https://*.googleapis.com https://*.bootstrapcdn.com; object-src 'self'",
+   "icons": {
+      "128": "images/icon_128.png"
+   },
+   "web_accessible_resources": ["packages/*"],
+   "manifest_version": 2,   
+   "permissions": [ "storage", "http://*/", "https://*/", "tabs" ],
+   "version": "1.0.0"
+}

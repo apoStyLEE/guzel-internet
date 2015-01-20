@@ -1,0 +1,41 @@
+body{
+	background: #ededed;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 16px;
+	line-height: 1.42857143;
+	padding-top: 10px!important;
+}
+
+html, body{
+	height: 100%;
+}
+
+a{
+	color:#3779D2;
+}
+
+#container{
+	background: white;
+	padding: 25px;
+	height: 100%;
+}
+
+#content-body{
+	width: 100%;
+	margin: 0;
+	padding: 0 50px 0 50px;
+}
+
+#index-section{
+	top:45px!important;
+	bottom: 30px!important;
+	width: 265px;
+}
+
+#main {
+	margin-left: 250px;
+}
+
+#partial-index{
+	padding-right: 20px!important;
+}
