@@ -2,9 +2,15 @@
 (function () {
     $.getJSON("packages/config.json", function (data) {
         var packageList = $('#package-list');
-        $.each(data.packages, function (i, giPackage) {
-            packageList.append('<li>' + giPackage.name + '</li>');
-        });
+		var packageListTemplate = $("#package-list-template").html();
+		var packageListTemplateCompile = Handlebars.compile(packageListTemplate);
+		var html = packageListTemplateCompile(data.packages);
+		packageList.html(html);
+    });
+
+    $(document).on("click",".js-show-package-details",function(e) {
+    	$(this).closest("li").find("ul.package-details").toggle();
+    	e.preventDefault();
     });
 
 })();

@@ -3,9 +3,8 @@
 	<head>
 		<title>Custom JavaScript</title>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">        
         <link href="css/style.css" rel="stylesheet">
         
 	</head>
@@ -15,6 +14,39 @@
 			<ul id="package-list"></ul>
 		</div>
 
+
+		<script type="text/x-handlebars-template" id="package-list-template">
+			{{#each this}}
+			<li>
+				<a href="#" class="js-show-package-details">{{name}}</a>
+				<ul class="package-details">
+					<li>
+						{{#if author}}
+							<strong>Yazar:</strong> {{author}} <br />
+						{{/if}}
+
+						{{#if description}}
+							<strong>Açıklama:</strong> {{description}} <br />
+						{{/if}}
+
+						{{#if helpurl}}
+							<strong>Yardım sayfası:</strong> <a href="{{helpurl}}" target="_blank"><i class="glyphicon glyphicon-new-window"></i></a>
+						{{/if}}
+					</li>
+					<li>
+						<strong>Çalıştığı alan adları:</strong>
+						{{#each domains}}
+							{{this}} 
+						{{/each}}
+					</li>
+				</ul>
+			</li>
+			{{/each}}
+		</script>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.min.js"></script>
         <script src="libs/popup.js"></script>
 	</body>
 </html>

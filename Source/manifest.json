@@ -12,7 +12,7 @@
          "matches": [ "http://*/*", "https://*/*"]
       }
    ],
-   "content_security_policy": "script-src 'self' https://*.googleapis.com https://*.bootstrapcdn.com; object-src 'self'",
+   "content_security_policy": "script-src 'self' 'unsafe-eval' https://*.googleapis.com https://*.cloudflare.com; object-src 'self'",
    "icons": {
       "128": "images/icon_128.png"
    },

@@ -1,3 +1,4 @@
+
 (function () {
     $.getJSON(getExtensionUrl('packages/config.json'), function (data) {
         var packages = data.packages;

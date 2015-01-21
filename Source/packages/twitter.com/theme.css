@@ -2,10 +2,21 @@ body{
 	
 }
 
+.topbar{
+	opacity: 0;
+}
+
+.AppContent{
+	padding: 20px 14px 15px;
+}
+
+.topbar:hover{
+	opacity: 1;
+}
+
 #timeline{
 	float: none;
 	margin:0 auto;
-	width: 990px;	
 }
 
 .js-view-details{display: none;}

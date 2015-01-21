@@ -30,6 +30,10 @@ body{
 	margin-top:10px;
 }
 
+.flashbar{
+	border-top: 1px solid #cac8c8;
+}
+
 .box2{
 	background: none;
 }
@@ -145,4 +149,26 @@ body{
 
 .slider.s_gri{
 	margin-bottom: 30px;
+}
+
+
+/* skorer haber */
+
+#_MiddleCenter1.colA{
+	float: none;
+	width: 96%;
+}
+
+.middle1-reformat{
+	margin-top: 0!important;
+	border: 1px solid #CECECE;
+}
+
+.detay-foto img{
+	width: 100%;
+}
+
+._dp .haber .tcontent .text{
+	font-size: inherit;
+	line-height: inherit;
 }

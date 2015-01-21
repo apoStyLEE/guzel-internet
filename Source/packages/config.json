@@ -2,16 +2,32 @@
   "version": "1.0.0",
   "packages": [
     {
+      "author":"apostylee",
+      "description":"milliyet.com.tr nin anasayfasını ve haber detay sayfasını güzelleştirir.",
+      "helpurl":"http://guzelinternet.tumblr.com",
     	"name": "milliyet.com.tr",
     	"domains":["*.milliyet.com.tr"]
     },
     {
+      "author":"apostylee",
+      "description":"",
+      "helpurl":"",
       "name": "eksisozluk.com",
       "domains":["eksisozluk.com"]
     },
     {
+      "author":"apostylee",
+      "description":"",
+      "helpurl":"",
       "name": "twitter.com",
       "domains":["twitter.com"]
+    },
+    {
+      "author":"apostylee",
+      "description":"",
+      "helpurl":"",
+      "name": "quup.com",
+      "domains":["quup.com"]
     }
   ]
 }

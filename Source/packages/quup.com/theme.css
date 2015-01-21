@@ -1,0 +1,63 @@
+body{
+	background: #ededed;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #333;
+}
+
+header{
+	opacity: 0;
+	position: fixed!important;
+	width: 100%;
+	top: 0;
+}
+
+header:hover{
+	opacity: 1;
+}
+
+.globalwidth {
+	margin-top: 0;
+}
+
+.newContainer {
+	width: 780px;
+	margin: 35px auto;
+}
+
+.flow{
+	width: 100%;
+	border: 1px solid #D8D8D8;
+	-webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+	box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+.new-quup{
+	width: 738px;
+	background: #ededed;
+}
+
+.new-quup fieldset.nq-content textarea {
+	width: 93%!important;
+}
+
+.new-quup fieldset.nq-properties .nq-lock {
+	left: 196px;
+}
+
+#tabFlow textarea, .themeArea {
+	width: 90%;
+}
+
+.quup .entry p, .quup .author-name, .quup .info p, .comment-author{
+	font-size: 16px;
+}
+
+.quup .comments ul li p, .quup .likes p {
+	font-size: 14px;	
+}
+
+.quup .info p{
+	margin-bottom:10px;
+}
